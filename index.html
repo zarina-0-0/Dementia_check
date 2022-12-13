@@ -1,11 +1,22 @@
-
-<!doctype html>
-    <title>Upload new File</title>
-    <h1>Upload new File</h1>
-    <form method=post enctype=multipart/form-data>
-      <input type=file name=file>
-      <input type=submit value=Upload>
-      {% if result %}
-          <p>{{result}}</p>
-      {% endif %}
+<!DOCTYPE html>
+<html>
+  
+<body>
+    <h1>Show File-select Fields</h1>
+  
+    <h3>
+        Show a file-select field which allows
+        only one file to be chosen:
+    </h3>
+  
+    <form action="/action_page.php" 
+        enctype="multipart/form-data">
+          
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile" />
+        <br /><br />
+        <input type="submit" />
     </form>
+</body>
+  
+</html>
